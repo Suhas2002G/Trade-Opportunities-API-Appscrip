@@ -1,4 +1,13 @@
 from fastapi import FastAPI
+from app.api.routes import router
 
+app = FastAPI(
+    title="Trade Opportunities API",
+    version="1.0"
+)
 
-app = FastAPI()
+app.include_router(router)
+
+@app.get("/")
+def root():
+    return {"message": "Trade Opportunities API Running"}
