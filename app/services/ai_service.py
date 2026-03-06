@@ -36,11 +36,8 @@ def analyze_sector(sector, news):
         )
 
         logger.info("Gemini analysis successful")
-
         return response.text
 
     except Exception as e:
-
         logger.error(f"Gemini API failed: {str(e)}")
-
         raise Exception("AI analysis failed")

@@ -5,9 +5,7 @@ from app.utils.logging import logger
 def search_market_news(sector: str):
 
     logger.info(f"Searching market news for sector: {sector}")
-
     query = f"India {sector} sector news market growth"
-
     results = []
 
     try:
@@ -22,11 +20,8 @@ def search_market_news(sector: str):
                 })
 
         logger.info(f"Collected {len(results)} news articles")
-
         return results
 
     except Exception as e:
-
         logger.error(f"Search service failed: {str(e)}")
-
         raise Exception("Failed to collect market news")
