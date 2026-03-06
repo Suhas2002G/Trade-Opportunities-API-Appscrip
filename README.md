@@ -83,11 +83,9 @@ trade-opportunities-api
 │   │   ├── auth.py
 │   │   └── rate_limiter.py
 │   │
-│   ├── middleware
-│   │   └── logging.py
-│   │
 │   ├── utils
 │   │   └── markdown.py
+│   │   └── logging.py
 │   │
 │   ├── config
 │   │   └── settings.py
@@ -117,8 +115,8 @@ trade-opportunities-api
 ### Clone the repository
 
 ```
-git clone https://github.com/yourusername/trade-opportunities-api.git
-cd trade-opportunities-api
+git clone https://github.com/Suhas2002G/Trade-Opportunities-API-Appscrip.git
+cd Trade-Opportunities-API-Appscrip
 ```
 
 ### Create virtual environment
